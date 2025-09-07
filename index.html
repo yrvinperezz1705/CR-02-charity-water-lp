@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <!-- We use Proxima Nova and Avenir fonts for the whole page -->
+  <style>
+    /* Set the font for the entire page */
+    body {
+      font-family: 'Proxima Nova', 'Avenir', sans-serif;
+    }
+  </style>
+  <!-- Remove Montserrat Google Fonts link -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <!-- Add the water can image at the top left before the title -->
+  <div style="display: flex; align-items: center;">
+    <!-- This is the new water can image -->
+    <img src="img/water-can-transparent.png" alt="Water Can" style="height: 60px; margin-right: 10px;">
+    <!-- The website title -->
+    <h1>Charity Water</h1>
+  </div>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content center-content">
+      <h1>Make Waves. <br> Bring Clean Water to Every Community</h1>
+      <p class="subheadline">College students are already changing the world. Together, we can end the global water crisis in our lives.</p>
+      <p class="highlight">Donate your coffee. Change a life.</p>
+      <p class="small">Skipping one $5 latte this week could give someone clean water for a year. Imagine what happens when an entire campus unites.</p>
+    </div>
+    <!-- Removed the hero image from the top right -->
+    <!-- <img src="kids.jpg" alt="Kids with clean water" class="hero-img"> -->
+  </section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <!-- Info Section -->
+  <section class="info">
+    <div class="info-box">
+      <h2>It Starts With Us. It Starts With You.</h2>
+      <p>Your donation isn’t just water—it’s rewriting futures. Be the generation that ends the water crisis.</p>
+    </div>
+    <div class="info-box dark">
+      <h2>One in ten people still live without clean water</h2>
+      <p>That means millions of kids miss school, families battle preventable diseases, and women walk miles every day just for water. But here’s the good news: we can change that—together. Your donation doesn’t just provide water, it creates health, education, and opportunity.</p>
+    </div>
+  </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <!-- Action Section -->
+  <section class="action">
+    <h2>
+      👉
+      <a href="https://www.charitywater.org/" target="_blank">
+        <button class="donate-btn">DONATE NOW</button>
+      </a>
+      👈
+    </h2>
+    <h3>Give Your Coffee Money Today!</h3>
+    <ul>
+      <li>💧 $40 = clean water for one person</li>
+      <li>📚 Kids go back to school instead of fetching water</li>
+      <li>❤️ 100% of your donation funds water projects</li>
+    </ul>
+  </section>
+
+  <!-- Students Section -->
+  <section class="students">
+    <div class="students-content">
+      <h2>Join Thousands of Students Taking Action</h2>
+      <img src="students.jpg" alt="Students holding water cans" class="students-img">
+      <p>From campus fundraisers to $5 monthly donations, students across the U.S. are proving small actions can create massive waves of change. Be part of the generation that ends the water crisis. Start a Campus Fundraiser.</p>
+      <p class="learn-more">Learn More → <a href="https://www.charitywater.org/" target="_blank">https://www.charitywater.org/</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Charity: Water Student Campaign</p>
+  </footer>
 </body>
 </html>
+
