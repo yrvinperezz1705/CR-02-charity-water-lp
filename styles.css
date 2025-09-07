@@ -163,48 +163,48 @@ footer {
 
 /* Style for the donate button */
 .donate-btn {
-  background-color: #00bcd4; /* Bright blue */
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 12px 28px; /* Space inside the button */
-  font-size: 1.1rem; /* Bigger text */
-  font-weight: 700; /* Bold text */
-  border-radius: 6px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin: 0 8px; /* Space around the button */
-  transition: background 0.2s, transform 0.2s;
+  background-color: #1e90ff; /* blue background */
+  color: white; /* white text */
+  border: none; /* no border */
+  padding: 10px 20px; /* space inside button */
+  font-size: 18px; /* bigger text */
+  cursor: pointer; /* pointer cursor on hover */
+  border-radius: 5px; /* rounded corners */
+  /* Add transition for smooth color change */
+  transition: background-color 0.3s;
 }
 
-/* Change color when hovering over the button */
+/* Change button color when hovered */
 .donate-btn:hover {
-  background-color: #0097a7;
-  transform: scale(1.05); /* Slightly enlarge button */
+  background-color: #0a5ec4; /* darker blue on hover */
 }
 
-/* Add a smooth transition to all buttons for hover effects */
-button {
-  transition: background 0.3s, transform 0.2s;
+/* Make images scale up a little when hovered */
+/* Add transition for smooth scaling */
+img {
+  transition: transform 0.3s;
 }
 
-/* Button hover effect: change background and slightly scale up */
-button:hover {
-  background: #0077cc; /* Example: darker blue on hover */
-  color: #fff;
-  transform: scale(1.05); /* Slightly enlarge button */
+/* Scale image up on hover */
+img:hover {
+  transform: scale(1.05); /* 5% bigger */
 }
 
-/* Add a transition to links for color change */
-a {
-  transition: color 0.3s;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
 
-/* Link hover effect: underline and color change */
-a:hover {
-  color: #0077cc; /* Example: blue on hover */
-  text-decoration: underline;
-}
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Add a transition to images for transform effects */
+  .hero-content {
+    margin-bottom: 20px;
+  }
+}
 img {
   transition: transform 0.3s;
 }
